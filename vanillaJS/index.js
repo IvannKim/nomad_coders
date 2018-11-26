@@ -1,4 +1,4 @@
-const title = document.getElementById("title");
+const title = document.querySelector("#title");
 
 title.innerHTML = "Hi, form JS";
 title.style.color = "red";
