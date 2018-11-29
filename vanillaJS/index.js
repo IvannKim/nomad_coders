@@ -1,5 +1,6 @@
 const title = document.querySelector("#title");
 
-title.innerHTML = "Hi, form JS";
-title.style.color = "red";
-document.title = "I love U"
+function handdleClick() {
+    title.style.color = "red";
+}
+title.addEventListener("click", handdleClick)
