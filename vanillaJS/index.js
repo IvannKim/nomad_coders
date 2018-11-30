@@ -1,11 +1,9 @@
-if (10>5) {
-    console.log("hi")
+const age = prompt("How old r u?")
+
+if (age >= 18 && age <= 21) {
+    console.log("u can drink but u should not")
+} else if (age > 21) {
+    console.log("go ahead")
 } else {
-    console.log("ho")
+    console.log("too young")
 }
-/*
-true && true == true;
-true && false == false;
-false && true == false;
-false && false == false;
-*/
