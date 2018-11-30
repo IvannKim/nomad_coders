@@ -14,17 +14,7 @@ function handdleClick() {
 
 function init() {
     title.style.color = BASE_COLOR;
-    title.addEventListener("click", handdleClick);
-
 }
 init()
 
-function handleOffline() {
-    console.log("u r offline. bye bye. check ur LAN");
-}
-
-function handleOnline() {
-    console.log("welcome back.");
-}
-window.addEventListener("offline", handleOffline);
-window.addEventListener("online", handleOnline);
+title.addEventListener("click", handdleClick);
