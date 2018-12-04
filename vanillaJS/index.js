@@ -14,8 +14,6 @@ function handdleClick() {
 
 function init() {
     title.style.color = BASE_COLOR;
+    title.addEventListener("click", handdleClick);
 }
-
-title.addEventListener("click", handdleClick);
-
 init()
