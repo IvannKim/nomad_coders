@@ -6,6 +6,10 @@ const TODOS_LS = 'toDos';
 
 const toDos = [];
 
+function deleteToDo(event) {
+
+}
+
 function saveToDos() {
     localStorage.setItem(TODOS_LS, JSON.stringify(toDos))
 }
@@ -16,6 +20,7 @@ function paintToTo(text) {
     const span = document.createElement("span");
     const newId = toDos.length + 1;
     delBtn.innerText = "X";
+    delBtn.addEventListener("click", deleteToDo);
     span.innerText = text;
     li.appendChild(span);
     li.appendChild(delBtn);
